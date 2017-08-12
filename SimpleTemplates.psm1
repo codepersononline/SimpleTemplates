@@ -14,7 +14,12 @@ Render-Template .\index.pshtml
 #>
 Function Render-Template  {
 param([Parameter(Mandatory=$true)] $Path, [hashtable]$Data)
-	$Path = $pwd.Path + $Path
+	
+	$Path = (Resolve-Path $Path).Path
+	
+	if(Test-Path -PathType Container -Path $Path) {
+		throw 'Folder paths cannot be used.'
+	}
 	
 	if($Data -is [hashtable]) {
 		foreach($item in $Data.getEnumerator()) {
