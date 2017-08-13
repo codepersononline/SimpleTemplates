@@ -42,3 +42,19 @@ will be available to use in .pshtml file as:
     </head>
     <body>$(Render-Template .\Menu.pshtml) </h2></body>
     </html>
+
+## If you want to have seperate templates for headers/footers/content/menus etc then this can be done by loading temlates side-by-side
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    $(Render-Template .\Menu.pshtml)
+    $(Render-Template .\Content.pshtml @{'Number1' = 1;'Number2' = 2;})    
+</body>
+</html>
