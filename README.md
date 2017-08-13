@@ -1,7 +1,7 @@
 # SimpleTemplates
 A basic template system for PowerShell, based on here-strings and stuff. Module can be downloaded from the PSGallery 
 
-INternally, SimpleTemplates works by wrrapping text files into here strings. This technique allows you the flexibility to generate markup in your favourite text editor, and then embed PowerShell expressions throughout your markup. The only requirement is that the template files you create should be named with the file .pshtml extension. If your using VS Code to edit powershell scripts, just open up the new .pshtml file and change the language mode to HTML. pshtml files are just like HTML files, but with powershell code embedded in them, so webservers shouldnt serve these files by default.
+Internally, SimpleTemplates works by wrrapping text files into here strings. This technique allows you the flexibility to generate markup in your favourite text editor, and then embed PowerShell expressions throughout your markup. The only requirement is that the template files you create should be named with the file .pshtml extension. If your using VS Code to edit powershell scripts, just open up the new .pshtml file and change the language mode to HTML. pshtml files are just like HTML files, but with powershell code embedded in them, so webservers shouldnt serve these files by default.
 
 How to use:
 1. Install-Module SimpleTemplates
