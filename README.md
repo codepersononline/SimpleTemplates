@@ -43,7 +43,7 @@ will be available to use in .pshtml file as:
     <body>$(Render-Template .\Menu.pshtml) </h2></body>
     </html>
 
-## If you want to have seperate templates for headers/footers/content/menus etc then this can be done by loading temlates side-by-side
+## If you want to have seperate templates for headers/footers/content/menus etc then this can be done by loading templates side-by-side
 
     <!DOCTYPE html>
     <html lang="en">
